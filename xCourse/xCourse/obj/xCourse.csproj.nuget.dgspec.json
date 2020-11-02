@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\holde\\source\\repos\\xCourse\\xCourse\\xCourse.csproj": {}
+    "C:\\Users\\holde\\Documents\\GitHub\\3380-xCourse\\xCourse\\xCourse\\xCourse.csproj": {}
   },
   "projects": {
-    "C:\\Users\\holde\\source\\repos\\xCourse\\xCourse\\xCourse.csproj": {
+    "C:\\Users\\holde\\Documents\\GitHub\\3380-xCourse\\xCourse\\xCourse\\xCourse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\holde\\source\\repos\\xCourse\\xCourse\\xCourse.csproj",
+        "projectUniqueName": "C:\\Users\\holde\\Documents\\GitHub\\3380-xCourse\\xCourse\\xCourse\\xCourse.csproj",
         "projectName": "xCourse",
-        "projectPath": "C:\\Users\\holde\\source\\repos\\xCourse\\xCourse\\xCourse.csproj",
+        "projectPath": "C:\\Users\\holde\\Documents\\GitHub\\3380-xCourse\\xCourse\\xCourse\\xCourse.csproj",
         "packagesPath": "C:\\Users\\holde\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\holde\\source\\repos\\xCourse\\xCourse\\obj\\",
+        "outputPath": "C:\\Users\\holde\\Documents\\GitHub\\3380-xCourse\\xCourse\\xCourse\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\holde\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "jquery": "3.5.1",
+    "bootstrap": "4.5.2",
+    "jquery-ajax-unobtrusive": "3.2.6",
+    "jquery-validation-unobtrusive": "3.2.11"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "3.0.0",
+    "css-loader": "4.2.2",
+    "expose-loader": "1.0.0",
+    "extract-text-webpack-plugin": "3.0.2",
+    "file-loader": "6.1.0",
+    "html-webpack-plugin": "4.4.1",
+    "less": "3.12.2",
+    "less-loader": "7.0.0",
+    "mini-css-extract-plugin": "0.11.0",
+    "optimize-css-assets-webpack-plugin": "5.0.4",
+    "style-loader": "1.2.1",
+    "terser-webpack-plugin": "4.1.0",
+    "url-loader": "4.1.0",
+    "webpack": "4.44.1",
+    "webpack-cli": "3.3.12",
+    "webpack-modernizr-loader": "5.0.0"
+  }
+}

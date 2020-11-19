@@ -38,7 +38,6 @@ C:\Users\holde\source\repos\xCourse\xCourse\obj\Debug\netcoreapp3.1\xCourse.cspr
 C:\Users\holde\source\repos\xCourse\xCourse\obj\Debug\netcoreapp3.1\Razor\Views\Plan\Index.cshtml.g.cs
 C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\bin\Debug\netcoreapp3.1\package.json
 C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\bin\Debug\netcoreapp3.1\xCourse.exe
 C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\bin\Debug\netcoreapp3.1\xCourse.deps.json
@@ -366,9 +365,6 @@ C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\bin\Debug\netcoreap
 C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\xCourse.csprojAssemblyReference.cache
 C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\xCourse.AssemblyInfoInputs.cache
 C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\xCourse.AssemblyInfo.cs
-C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\xCourse.csproj.CoreCompileInputs.cache
-C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\xCourse.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\xCourse.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\xCourse.RazorAssemblyInfo.cache
 C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\xCourse.RazorAssemblyInfo.cs
 C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\xCourse.TagHelpers.input.cache
@@ -391,3 +387,14 @@ C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreap
 C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\xCourse.dll
 C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\xCourse.pdb
 C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\xCourse.genruntimeconfig.cache
+C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\xCourse.RazorComponent.input.cache
+C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\RazorDeclaration\Views\Shared\Component.razor.g.cs
+C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\Razor\Views\Compare\Index.cshtml.g.cs
+C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\bin\Debug\netcoreapp3.1\package-lock.json
+C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\bin\Debug\netcoreapp3.1\package.json
+C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\xCourse.csproj.CoreCompileInputs.cache
+C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\xCourse.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\xCourse.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\RazorDeclaration\xCourse.dll
+C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Component.razor.g.cs
+C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\Razor\Views\Test\Index.cshtml.g.cs

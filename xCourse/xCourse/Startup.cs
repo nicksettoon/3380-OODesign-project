@@ -24,6 +24,13 @@ namespace xCourse
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+/*            services.AddControllers().AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.PropertyNamingPolicy = null;
+
+                options
+            });*/
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

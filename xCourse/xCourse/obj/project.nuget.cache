@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kzwCDbiNDMRM2xsn1yr+HwDrn24lClEM5R1yVk7nulfGQTp7vkqcCDNxkbYlD3hVzo8RFOlmD38zOJdOgi2gvw==",
+  "dgSpecHash": "R+PNpyhjvjTUkfYOQspWcitvf6/Q0CRLplDy1CpeCAKptc/eod7VgNsUtziplZY3qT737ZWkSfhB5ok/lsAY7Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\holde\\Documents\\GitHub\\3380-xCourse\\xCourse\\xCourse\\xCourse.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,9 @@
     "C:\\Users\\holde\\.nuget\\packages\\microsoft.codeanalysis.razor\\3.1.9\\microsoft.codeanalysis.razor.3.1.9.nupkg.sha512",
     "C:\\Users\\holde\\.nuget\\packages\\microsoft.extensions.dependencymodel\\3.1.6\\microsoft.extensions.dependencymodel.3.1.6.nupkg.sha512",
     "C:\\Users\\holde\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+    "C:\\Users\\holde\\.nuget\\packages\\node.js\\0.12.7\\node.js.0.12.7.nupkg.sha512",
+    "C:\\Users\\holde\\.nuget\\packages\\nogit\\0.1.0\\nogit.0.1.0.nupkg.sha512",
+    "C:\\Users\\holde\\.nuget\\packages\\npm\\3.5.2\\npm.3.5.2.nupkg.sha512",
     "C:\\Users\\holde\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
     "C:\\Users\\holde\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\holde\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",

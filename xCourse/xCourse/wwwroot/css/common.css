@@ -28,17 +28,11 @@ body {
 /********* Header ********/
 #top_header {
     background-color: #461d7c;
-    color: #FFFFFF;
+    color: #FDD023;
     background-image: -webkit-linear-gradient(top, #461d7c 0, #381763 100%);
     background-image: linear-gradient(to bottom, #461d7c 0, 100%);
-}
-
-#mylsu-logo {
-    background: transparent url('../../images/shared/mylsu_logo.png') left top no-repeat;
-    width: 152px;
-    height: 45px;
-    float: left;
-    margin: 5px;
+    font-size: 32px;
+    padding: 7px 15px 10px;
 }
 
 #top_header_menu {
@@ -46,7 +40,7 @@ body {
     -moz-border-radius-bottomleft: 15px;
     border-bottom-left-radius: 15px;
     line-height: 15px;
-    float: right;
+    float: left;
     width: auto;
     clear: none;
     padding: 0 0 0 10px;
@@ -154,20 +148,19 @@ a#top_header_nav_pull {
     padding-right: 1em;
 }
 
-.footer_logo {
-    display: block;
-    text-align: right;
-    float: right;
-    width: 80px;
-    height: 30px;
-    background: transparent url("../../images/shared/lsu_footer.png") no-repeat;
-}
 /* END FOOTER */
 
 /* BOOTSTRAP MODIFICATIONS */
 
 .navbar-brand {
-    display: none;
+    color: #FDD023;
+    font-size: 32px;
+    float: left;
+    border-left: 1px solid #C7C7C7;
+    padding: 5px;
+    width: 50%;
+    margin: 5px 0 0 0;
+    font-family: Tahoma, Geneva, sans-serif;
 }
 
 .navbar {
@@ -234,14 +227,6 @@ a#top_header_nav_pull {
 .error_color, .errorColor, .error-Color {
     color: red;
     padding: 1px;
-}
-
-.error-message, .errorMessage, .error-Message {
-    color: red;
-    background: url("../../images/shared/error.gif") top left no-repeat;
-    padding: 1px;
-    padding-left: 20px;
-    display: block;
 }
 
 /*replacement for bootstrap-social*/

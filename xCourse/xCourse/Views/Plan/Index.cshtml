@@ -182,10 +182,91 @@
 
 
 
-<h1>Plan your degree!</h1>
+<h1 style="text-align:center;"> Plan your degree!</h1>
 
-<h2>@Model.Degree</h2>
+<h2 style="text-align:center;"> @Model.Degree</h2>
 
 <body onload="init()">
-    <div id="myDiagramDiv" style="width: 1200px; height: 800px; border: 1px solid black;"></div>
+    <br />
+    <div class="row">
+        <div class="col-3">
+            <div class="container-sm align-self-start" id="purple">
+                <h2> <span class="tab1"></span> Select Degree</h2>
+                <ul class="navbar-nav flex-column" id="notHidden">
+                    <li class="dropdown dropright">
+                        <div type="button" class="btn" data-toggle="dropdown">
+                            College of Engineering
+                        </div>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#BE">Biological & Agricultural Engineering</a>
+                            <a class="dropdown-item" href="#CE">Civil Engineering</a>
+                            <a class="dropdown-item" href="#ChE">Chemical Engineering</a>
+                            <a class="dropdown-item" href="#EEC">Computer Engineering</a>
+                            <a class="dropdown-item" href="#CSC-SD">Computer Science (Second Discipline)</a>
+                            <a class="dropdown-item" href="#CSC-CYB">Computer Science (Cybersecurity Concentration)</a>
+                            <a class="dropdown-item" href="#CSC-DSA">Computer Science (Data Science & Analytics)</a>
+                            <a class="dropdown-item" href="#CSC-SEG">Computer Science (Software Engineering)</a>
+                            <a class="dropdown-item" href="#CSC-CCN">Computer Science (Cloud Computing & Networking)</a>
+                            <a class="dropdown-item" href="#CM">Construction Management</a>
+                            <a class="dropdown-item" href="#CM-IEA">Construction Management - Industry Emphasis Area</a>
+                            <a class="dropdown-item" href="#EE">Electrical Enginerring</a>
+                            <a class="dropdown-item" href="#EVEG">Environmental Engineering</a>
+                            <a class="dropdown-item" href="#IE">Industrial Engineering</a>
+                            <a class="dropdown-item" href="#ME">Mechanical Engineering</a>
+                            <a class="dropdown-item" href="#PETE">Petroleum Engineering</a>
+                        </div>
+                    </li>
+                    <li class="dropdown dropright">
+                        <div type="button" class="btn" data-toggle="dropdown">
+                            College of Agriculture
+                        </div>
+                    </li>
+                    <li class="dropdown dropright">
+                        <div type="button" class="btn" data-toggle="dropdown">
+                            College of Art & Design
+                        </div>
+                    </li>
+                    <li class="dropdown dropright">
+                        <div type="button" class="btn" data-toggle="dropdown">
+                            College of Business
+                        </div>
+                    </li>
+                    <li class="dropdown dropright">
+                        <div type="button" class="btn" data-toggle="dropdown">
+                            College of the Coast & Enviroment
+                        </div>
+                    </li>
+                    <li class="dropdown dropright">
+                        <div type="button" class="btn" data-toggle="dropdown">
+                            College of Human Sciences & Education
+                        </div>
+                    </li>
+                    <li class="dropdown dropright">
+                        <div type="button" class="btn" data-toggle="dropdown">
+                            Manship School of Mass Communication
+                        </div>
+                    </li>
+                    <li class="dropdown dropright">
+                        <div type="button" class="btn" data-toggle="dropdown">
+                            College of Music & Dramatic Arts
+                        </div>
+                    </li>
+                    <li class="dropdown dropright">
+                        <div type="button" class="btn" data-toggle="dropdown">
+                            College of Science
+                        </div>
+                    </li>
+                    <li class="dropdown dropright">
+                        <div type="button" class="btn" data-toggle="dropdown">
+                            University College
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-8">
+            <div id="myDiagramDiv" style="width: 1200px; height: 800px; border: 1px solid black;"></div>
+        </div>
+    </div>
+    
 </body>

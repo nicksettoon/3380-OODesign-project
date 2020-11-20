@@ -88,6 +88,12 @@ ul {
     background-image: linear-gradient(to bottom, #cccccc 0, 100%);
     position: sticky;
     top: 0;
+    z-index: 10;
+}
+
+#notHidden {
+    overflow: visible;
+    z-index: 5;
 }
 
 li {
@@ -147,4 +153,14 @@ li {
 
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+}
+
+#purple {
+    background-color: #461d7c;
+    color: white;
+}
+
+.tab1 {
+    display: inline-block;
+    margin-left: 3px;
 }

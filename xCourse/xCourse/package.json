@@ -4,6 +4,5 @@
   "private": true,
   "devDependencies": {},
   "dependencies": {
-    "webpack": "^5.4.0"
   }
 }

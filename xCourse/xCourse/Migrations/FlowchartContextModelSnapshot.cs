@@ -38,8 +38,8 @@ namespace xCourse.Migrations
                     b.Property<int>("Hours")
                         .HasColumnType("int");
 
-                    b.Property<int>("Number")
-                        .HasColumnType("int");
+                    b.Property<string>("Number")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("SemesterID")
                         .HasColumnType("int");
@@ -83,6 +83,21 @@ namespace xCourse.Migrations
                     b.ToTable("Semester");
                 });
 
+            modelBuilder.Entity("xCourse.Models.FlowchartModel", b =>
+                {
+                    b.Property<string>("CourseCodeAbbriviation")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("DegreeAbbriviation")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("CourseCodeAbbriviation");
+
+                    b.HasIndex("DegreeAbbriviation");
+
+                    b.ToTable("FlowchartModel");
+                });
+
             modelBuilder.Entity("xCourse.Entities.Course", b =>
                 {
                     b.HasOne("xCourse.Entities.Course", null)
@@ -98,6 +113,13 @@ namespace xCourse.Migrations
                 {
                     b.HasOne("xCourse.Entities.Degree", null)
                         .WithMany("Semesters")
+                        .HasForeignKey("DegreeAbbriviation");
+                });
+
+            modelBuilder.Entity("xCourse.Models.FlowchartModel", b =>
+                {
+                    b.HasOne("xCourse.Entities.Degree", "Degree")
+                        .WithMany()
                         .HasForeignKey("DegreeAbbriviation");
                 });
 #pragma warning restore 612, 618

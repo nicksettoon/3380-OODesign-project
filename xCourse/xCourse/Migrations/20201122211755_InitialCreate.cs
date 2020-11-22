@@ -19,6 +19,24 @@ namespace xCourse.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "FlowchartModel",
+                columns: table => new
+                {
+                    CourseCodeAbbriviation = table.Column<string>(nullable: false),
+                    DegreeAbbriviation = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_FlowchartModel", x => x.CourseCodeAbbriviation);
+                    table.ForeignKey(
+                        name: "FK_FlowchartModel_Degree_DegreeAbbriviation",
+                        column: x => x.DegreeAbbriviation,
+                        principalTable: "Degree",
+                        principalColumn: "DegreeAbbriviation",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Semester",
                 columns: table => new
                 {
@@ -44,7 +62,7 @@ namespace xCourse.Migrations
                     ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CourseCodeAbbriviation = table.Column<string>(nullable: true),
-                    Number = table.Column<int>(nullable: false),
+                    Number = table.Column<string>(nullable: true),
                     Hours = table.Column<int>(nullable: false),
                     Description = table.Column<string>(nullable: true),
                     CourseID = table.Column<int>(nullable: true),
@@ -78,6 +96,11 @@ namespace xCourse.Migrations
                 column: "SemesterID");
 
             migrationBuilder.CreateIndex(
+                name: "IX_FlowchartModel_DegreeAbbriviation",
+                table: "FlowchartModel",
+                column: "DegreeAbbriviation");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Semester_DegreeAbbriviation",
                 table: "Semester",
                 column: "DegreeAbbriviation");
@@ -87,6 +110,9 @@ namespace xCourse.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Course");
+
+            migrationBuilder.DropTable(
+                name: "FlowchartModel");
 
             migrationBuilder.DropTable(
                 name: "Semester");

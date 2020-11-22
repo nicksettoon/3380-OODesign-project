@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using xCourse.Models;
 
 namespace xCourse.Entities
 {
@@ -23,6 +24,9 @@ namespace xCourse.Entities
         {
             optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=xCourse;Integrated Security=True");
         }
+
+
+        public DbSet<xCourse.Models.FlowchartModel> FlowchartModel { get; set; }
     }
 
 

@@ -14,7 +14,7 @@ namespace xCourse.Entities
         public string CourseCodeAbbriviation { get; set; }
 
        
-        public int Number { get; set; }
+        public string Number { get; set; }
 
         [Required]
         public int Hours { get; set; }
@@ -28,7 +28,7 @@ namespace xCourse.Entities
 
         }
 
-        public Course(string _abbriv, int _courseNumber, int _hours, string _description, List<Course> _prereqs)
+        public Course(string _abbriv, string _courseNumber, int _hours, string _description, List<Course> _prereqs)
         {
             CourseCodeAbbriviation = _abbriv;
 

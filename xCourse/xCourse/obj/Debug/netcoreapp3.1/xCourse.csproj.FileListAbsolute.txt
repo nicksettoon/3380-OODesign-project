@@ -849,3 +849,4 @@ C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreap
 C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\xCourse.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\RazorDeclaration\xCourse.dll
 C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Component.razor.g.cs
+C:\Users\holde\Documents\GitHub\3380-xCourse\xCourse\xCourse\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Flowchart.cshtml.g.cs

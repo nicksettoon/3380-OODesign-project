@@ -492,10 +492,10 @@ namespace xCourse.Models
                                         Prerequisites = null
                                     },
                                     new Course() {
-                                        CourseCodeAbbriviation = "ENGL",
-                                        Number = "1001",
-                                        Hours = 3,
-                                        Description = "Comp I",
+                                        CourseCodeAbbriviation = "EE",
+                                        Number = "1810",
+                                        Hours = 2,
+                                        Description = "Intro to ECE",
                                         Prerequisites = null
                                     },
                                     new Course() {
@@ -506,10 +506,10 @@ namespace xCourse.Models
                                         Prerequisites = null
                                     },
                                     new Course() {
-                                        CourseCodeAbbriviation = "EE",
-                                        Number = "1810",
-                                        Hours = 2,
-                                        Description = "Intro to ECE",
+                                        CourseCodeAbbriviation = "ENGL",
+                                        Number = "1001",
+                                        Hours = 3,
+                                        Description = "Comp I",
                                         Prerequisites = null
                                     }
                                 }},
@@ -533,6 +533,13 @@ namespace xCourse.Models
                                         }
                                     },
                                 new Course() {
+                                        CourseCodeAbbriviation = "CSC",
+                                        Number = "1253",
+                                        Hours = 3,
+                                        Description = "Intro CSC",
+                                        Prerequisites = null
+                                    },
+                                new Course() {
                                         CourseCodeAbbriviation = "MATH",
                                         Number = "1552",
                                         Hours = 4,
@@ -549,39 +556,18 @@ namespace xCourse.Models
                                         }
                                     },
                                 new Course() {
-                                        CourseCodeAbbriviation = "CSC",
-                                        Number = "1253",
-                                        Hours = 3,
-                                        Description = "Intro CSC",
-                                        Prerequisites = null
-                                    },
-                                new Course() {
                                         CourseCodeAbbriviation = "PHYS",
                                         Number = "2110",
                                         Hours = 3,
                                         Description = "Gen Phys I",
-                                        Prerequisites = new List<Course>
-                                        {
-                                            new Course()
-                                            {
-                                                CourseCodeAbbriviation = "MATH",
-                                                Number = "1552"
-                                            }
-                                        }
+                                        Prerequisites = null
                                      },
                                 new Course() {
                                         CourseCodeAbbriviation = "PHYS",
                                         Number = "2108",
                                         Hours = 1,
                                         Description = "Phys Lab",
-                                        Prerequisites = new List<Course>
-                                        {
-                                            new Course()
-                                            {
-                                                CourseCodeAbbriviation = "PHYS",
-                                                Number = "2110"
-                                            }
-                                        }
+                                        Prerequisites = null
                                     },
                                 new Course() {
                                         CourseCodeAbbriviation = "Life-Science",
@@ -648,24 +634,7 @@ namespace xCourse.Models
                                         Number = "2120",
                                         Hours = 3,
                                         Description = "Circuits",
-                                        Prerequisites = new List<Course>()
-                                        {
-                                            new Course()
-                                            {
-                                                CourseCodeAbbriviation = "EE",
-                                                Number = "1810"
-                                            },
-                                            new Course()
-                                            {
-                                                CourseCodeAbbriviation = "PHYS",
-                                                Number = "2113"
-                                            },
-                                            new Course()
-                                            {
-                                                CourseCodeAbbriviation = "MATH",
-                                                Number = "2070"
-                                            }
-                                        }
+                                        Prerequisites = null
                                 },
                                 new Course() {
                                         CourseCodeAbbriviation = "PHYS",
@@ -704,22 +673,6 @@ namespace xCourse.Models
                                                     Hours = 3,
                                                     Description = "Intro CSC",
                                                     Prerequisites = null
-                                                },
-                                            new Course()
-                                                {
-                                                    CourseCodeAbbriviation = "EE",
-                                                    Number = "2130",
-                                                    Hours = 3,
-                                                    Description = "Circuits II",
-                                                    Prerequisites = null
-                                                },
-                                            new Course()
-                                                {
-                                                    CourseCodeAbbriviation = "EE",
-                                                    Number = "2231",
-                                                    Hours = 3,
-                                                    Description = "Elect. 1 Lab",
-                                                    Prerequisites = null
                                                 }
                                             }
                                     },
@@ -744,7 +697,31 @@ namespace xCourse.Models
                                     Number = "2130",
                                     Hours = 3,
                                     Description = "Circuits II",
-                                    Prerequisites = null
+                                    Prerequisites = new List<Course>() {
+                                        new Course() {
+                                            CourseCodeAbbriviation = "EE",
+                                            Number = "2120",
+                                            Hours = 3,
+                                            Description = "Circuits",
+                                            Prerequisites = null
+                                        }
+                                    }
+                                },
+                                new Course()
+                                {
+                                    CourseCodeAbbriviation = "EE",
+                                    Number = "2230",
+                                    Hours = 3,
+                                    Description = "Electronics 1",
+                                    Prerequisites = new List<Course>() {
+                                        new Course() {
+                                            CourseCodeAbbriviation = "EE",
+                                            Number = "2120",
+                                            Hours = 3,
+                                            Description = "Circuits",
+                                            Prerequisites = null
+                                        }
+                                    }
                                 },
                                 new Course()
                                 {
@@ -760,7 +737,17 @@ namespace xCourse.Models
                                     Number = "2000",
                                     Hours = 3,
                                     Description = "Comp II",
-                                    Prerequisites = null
+                                    Prerequisites = new List<Course>()
+                                    {
+                                        new Course()
+                                        {
+                                            CourseCodeAbbriviation = "ENGL",
+                                            Number = "1001",
+                                            Hours = 3,
+                                            Description = "Comp 1",
+                                            Prerequisites = null
+                                        }
+                                    }
                                 }
                             }
 
@@ -884,15 +871,6 @@ namespace xCourse.Models
                                                     Hours = 3,
                                                     Description = "Intro CSC II",
                                                     Prerequisites = null
-                                                },
-
-                                            new Course()
-                                                {
-                                                    CourseCodeAbbriviation = "EE",
-                                                    Number =  "2741",
-                                                    Hours = 3,
-                                                    Description = "Dig Logic I",
-                                                    Prerequisites = null
                                                 }
                                             }
                                 },
@@ -902,15 +880,6 @@ namespace xCourse.Models
                                         Hours = 3,
                                         Description = "Comm in Comp",
                                         Prerequisites = new List<Course>() {
-                                            new Course()
-                                                {
-                                                    CourseCodeAbbriviation = "EE",
-                                                    Number =  "3150",
-                                                    Hours = 3,
-                                                    Description = "Probability",
-                                                    Prerequisites = null
-                                                },
-
                                             new Course()
                                                 {
                                                     CourseCodeAbbriviation = "EE",

@@ -19,6 +19,65 @@
 
                 </div>
             }
+<<<<<<< Updated upstream
+=======
+        ));
+    myDiagram2.linkTemplate =
+        $(go.Link,
+            $(go.Shape));
+
+    var nodeDataArray2 = [
+        {
+            key: "_BANDS",
+            category: "Bands",
+            itemArray: [
+                { text: "Fall 1" },
+                { text: "Spring 2" },
+                { text: "Fall 3" },
+                { text: "Spring 4" },
+                { text: "Fall 5" },
+                { text: "Spring 6" },
+                { text: "Fall 7" },
+                { text: "Spring 8" }
+            ]
+        },
+                @Html.Raw(@Model.SecondDegreeNodes)
+            ];
+
+
+
+    var linkDataArray2 = [ @Html.Raw(@Model.SecondDegreeLinks) ];
+
+    myDiagram2.model = new go.GraphLinksModel([{
+        key: "_BANDS",
+        category: "Bands",
+        itemArray: [
+            { text: "Fall 1" },
+            { text: "Spring 2" },
+            { text: "Fall 3" },
+            { text: "Spring 4" },
+            { text: "Fall 5" },
+            { text: "Spring 6" },
+            { text: "Fall 7" },
+            { text: "Spring 8" }
+        ]
+    },
+            @Html.Raw(@Model.SecondDegreeNodes)
+        ],
+    [ @Html.Raw(@Model.SecondDegreeLinks) ]
+
+        );
+    };
+</script>
+
+<body onload="init()">
+    <div class="row">
+        <div class="col-6">
+            <div id="myDiagramDiv" style="width: 100%; height: 800px; border: 1px solid black; margin: 0 2px 0 0"></div>
+        </div>
+        <div class="col-6">
+            <div id="myDiagramDiv2" style="width: 100%; height: 800px; border: 1px solid black; margin: 0 2px 0 0"></div>
+>>>>>>> Stashed changes
         </div>
     </div>
 </div>

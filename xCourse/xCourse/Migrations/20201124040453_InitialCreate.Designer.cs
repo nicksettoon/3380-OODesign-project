@@ -10,11 +10,7 @@ using xCourse.Entities;
 namespace xCourse.Migrations
 {
     [DbContext(typeof(FlowchartContext))]
-<<<<<<< HEAD:xCourse/xCourse/Migrations/20201124050911_InitialCreate.Designer.cs
-    [Migration("20201124050911_InitialCreate")]
-=======
     [Migration("20201124040453_InitialCreate")]
->>>>>>> e0f91b065b3234bee6aa3a18bb6a5f5975feef02:xCourse/xCourse/Migrations/20201124040453_InitialCreate.Designer.cs
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -250,7 +250,6 @@ a.list-group-item.active, a.list-group-item.active:hover {
     .card-primary > .card-header {
         background-color: #428bca;
         background-color: #461d7c !important;
-        color: white;
     }
 
         .card-primary > .card-header + .panel-collapse .panel-body {

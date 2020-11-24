@@ -10,7 +10,7 @@ using xCourse.Entities;
 namespace xCourse.Migrations
 {
     [DbContext(typeof(FlowchartContext))]
-    [Migration("20201123043759_InitialCreate")]
+    [Migration("20201124040453_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

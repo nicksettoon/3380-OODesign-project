@@ -7,7 +7,8 @@ namespace xCourse.Models
 {
     public class CompareModel
     {
-        public List<string> DegreeName = new List<string> { "Computer Engineering", "Computer Science Second Discipline" };
+        public List<string> DegreeName = new List<string> { "Computer Engineering", "Computer Science Second Discipline", "Computer Science Software Engineering",
+            "Industrial Engineering"};
 
         public string CompareDegree { get; set; }
 

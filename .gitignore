@@ -184,3 +184,5 @@ FakesAssemblies/
 /packages
 
 /xCourse/xCourse/node_modules*
+
+/xCourse/xCourse/Migrations*

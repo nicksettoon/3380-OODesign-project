@@ -24,8 +24,6 @@ namespace xCourse
         {
             services.AddControllersWithViews();
 
-            /*services.AddDbContext<FlowchartContext>(options =>
-                options.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = xCourse; Integrated Security = True"));*/
 
             services.AddDbContext<xCourseContext>(options => 
                 options.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = xCourse; Integrated Security = True"));

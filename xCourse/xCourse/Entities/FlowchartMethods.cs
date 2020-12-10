@@ -49,8 +49,15 @@ namespace xCourse.Entities
                 }
             }
 
-            nodes = nodes.Remove(nodes.Length - 1, 1);
-            links = links.Remove(links.Length - 1, 1);
+            if (nodes != null && nodes != "")
+            {
+                nodes = nodes.Remove(nodes.Length - 1, 1);
+            }
+            if (links != null && nodes != "")
+            {
+                links = links.Remove(links.Length - 1, 1);
+            }
+
             return new string[] { nodes, links };
         }
 

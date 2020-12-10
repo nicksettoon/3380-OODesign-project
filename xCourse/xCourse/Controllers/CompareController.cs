@@ -29,101 +29,22 @@ namespace xCourse.Controllers
                     Console.WriteLine("Invalid Compare Degree");
                     break;
             }
-            using (var context = new FlowchartContext())
-            {
-                var DegreeList = context.Degree
-                    .Include(degree => degree.Semesters)
-                        .ThenInclude(semsester => semsester.Courses)
-                        .ThenInclude(course => course.Prerequisites)
-                    .ToList();
+            var DegreeList = FlowchartMethods.GetDegreeList();
 
-
-                string nodesPrimary = "";
-
-                string linksPrimary = "";
-
-                string compareNodes = "";
-                
-                string compareLinks = "";
-
-
-                foreach (var degree in DegreeList)
-                {
-                    if (degree.DegreeAbbriviation.Equals("CSC SD"))
-                    {
-                        int semesterCounter = 7;
-                        foreach (var semester in degree.Semesters)
-                        {
-                            foreach (var course in semester.Courses)
-                            {
-                                if (course.Prerequisites != null)
-                                {
-                                    foreach (var prereq in course.Prerequisites)
-                                    {
-                                        linksPrimary += $"{{ to: \"{course.CourseCodeAbbriviation} {course.Number}\", from: \"{prereq.CourseCodeAbbriviation} {prereq.Number}\"}}, ";
-
-
-                                    }
-
-                                }
-
-                                nodesPrimary += $"{{ key: \"{course.CourseCodeAbbriviation} {course.Number}\", items: [ \"({course.Hours})\", \"{course.CourseCodeAbbriviation} {course.Number}\", \"{course.Description}\"], layer: {semesterCounter} }}, ";
-
-
-                            }
-
-                            semesterCounter--;
-                        }
-                    }
-                    
-                    if (degree.DegreeAbbriviation.Equals(cmpDegreeAbr))
-                    {
-                        int semesterCounter = 7;
-                        foreach (var semester in degree.Semesters)
-                        {
-                            foreach (var course in semester.Courses)
-                            {
-                                if (course.Prerequisites != null)
-                                {
-                                    foreach (var prereq in course.Prerequisites)
-                                    {
-                                        compareLinks += $"{{ to: \"{course.CourseCodeAbbriviation} {course.Number}\", from: \"{prereq.CourseCodeAbbriviation} {prereq.Number}\"}}, ";
-
-
-                                    }
-
-                                }
-
-                                compareNodes += $"{{ key: \"{course.CourseCodeAbbriviation} {course.Number}\", items: [ \"({course.Hours})\", \"{course.CourseCodeAbbriviation} {course.Number}\", \"{course.Description}\"], layer: {semesterCounter} }}, ";
-
-
-                            }
-
-                            semesterCounter--;
-                        }
-                    }
-                }
-                nodesPrimary = nodesPrimary.Remove(nodesPrimary.Length - 1, 1);
-                linksPrimary = linksPrimary.Remove(linksPrimary.Length - 1, 1);
-                if (!string.IsNullOrEmpty(compareNodes))
-                {
-                    compareNodes = compareNodes.Remove(compareNodes.Length - 1, 1);
-                }
-                if (!string.IsNullOrEmpty(compareLinks))
-                {
-                    compareLinks = compareLinks.Remove(compareLinks.Length - 1, 1);
-                }
+            var PrimaryDegreeStrings = FlowchartMethods.GenerateFlowchartStrings(DegreeList, "CSC SD");
+            var CompareDegreeStrings = FlowchartMethods.GenerateFlowchartStrings(DegreeList, cmpDegreeAbr);
+            
                 
                 return View("Index", new CompareModel()
                 {
-                    FirstDegreeNodes = nodesPrimary,
-                    FirstDegreeLinks = linksPrimary,
-                    SecondDegreeNodes = compareNodes,
-                    SecondDegreeLinks = compareLinks
+                    FirstDegreeNodes = PrimaryDegreeStrings[0],
+                    FirstDegreeLinks = PrimaryDegreeStrings[1],
+                    SecondDegreeNodes = CompareDegreeStrings[0],
+                    SecondDegreeLinks = CompareDegreeStrings[1]
                 });
 
             }
-        }
+        
 
         public IActionResult Submit(CompareModel data)
         {

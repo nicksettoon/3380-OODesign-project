@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -12,6 +12,28 @@ namespace xCourse.Models
     {
         public static void Initialize(IServiceProvider serviceProvider)
         {
+            using (var context = new UserContext(serviceProvider.GetRequiredService<DbContextOptions<FlowchartContext>>()))
+            {
+                if (context.Users.Any())
+                {
+                    return;
+                }
+
+                context.Users.AddRange(
+                    new User()
+                    {
+                        DegreeAbbrev = "CSC SD",
+                        Name = "Seth Richard",
+                        PreviouslyTakenCourses = new List<Course>
+                        {
+
+                        }
+                    }
+                    );
+
+
+            }
+
             using (var context = new FlowchartContext(
                 serviceProvider.GetRequiredService<DbContextOptions<FlowchartContext>>()))
             {
@@ -19,8 +41,6 @@ namespace xCourse.Models
                 {
                     return;
                 }
-
-                var i = 0;
 
                 context.Degree.AddRange(
                     new Degree
@@ -51,7 +71,7 @@ namespace xCourse.Models
                                         Hours = 3,
                                         Description = "Comp I",
                                         Prerequisites = null
-                                    },
+                                       },
                                     new Course() {
                                         CourseCodeAbbriviation = "BIOL",
                                         Number = "1001",
@@ -1033,3 +1053,4 @@ namespace xCourse.Models
         }
     }
 }
+*/

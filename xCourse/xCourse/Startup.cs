@@ -6,6 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 
 using xCourse.Entities;
+using xCourse.Data;
 
 namespace xCourse
 {
@@ -21,21 +22,14 @@ namespace xCourse
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-/*            services.AddDbContext<UserContext>(options => 
-                options.UseInMemoryDatabase("xCourse"));*/
-
             services.AddControllersWithViews();
 
-            services.AddDbContext<FlowchartContext>(options =>
-            options.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = xCourse; Integrated Security = True"));
+            /*services.AddDbContext<FlowchartContext>(options =>
+                options.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = xCourse; Integrated Security = True"));*/
 
+            services.AddDbContext<xCourseContext>(options => 
+                options.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = xCourse; Integrated Security = True"));
 
-            /*            services.AddControllers().AddJsonOptions(options =>
-                        {
-                            options.JsonSerializerOptions.PropertyNamingPolicy = null;
-
-                            options
-                        });*/
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

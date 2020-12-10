@@ -3,17 +3,19 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using static xCourse.Data.xCourseContext;
 
 namespace xCourse.Entities
 {
     public class Semester
     {
-        [Key]
-        public int ID { get; set; }
-        [Required]
-        public List<Course> Courses { get; set; }
+        public int SemesterId { get; set; }
 
-        public int getTotalHours()
+        public virtual List<DegreeSemester> DegreeSemesters { get; set; }
+
+        public virtual List<SemesterCourse> SemesterCourses { get; set; }
+
+        /*public int getTotalHours()
         {
             int hours = 0;
             foreach (var course in Courses)
@@ -22,17 +24,6 @@ namespace xCourse.Entities
             }
 
             return hours;
-        }
-
-        public Semester()
-        {
-
-        }
-
-        public Semester(int _id, List<Course> _courses)
-        {
-            ID = _id;
-            Courses = _courses;
-        }
+        }*/
     }
 }

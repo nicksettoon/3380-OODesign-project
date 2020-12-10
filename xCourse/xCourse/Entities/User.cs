@@ -3,21 +3,18 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using static xCourse.Data.xCourseContext;
 
 namespace xCourse.Entities
 {
     public class User
     {
-        [Key]
-        public long Id { get; set; }
+        public int UserId { get; set; }
 
-        [Required]
         public string Name { get; set; }
 
-        [Required]
-        public string DeegreeAbbriv { get; set; }
+        public string DegreeAbbrev { get; set; }
 
-        [Required]
-        public List<Course> PreviouslyTakenCourses { get; set; }
+        public virtual List<UserCourse> UserCourses { get; set; }
     }
 }

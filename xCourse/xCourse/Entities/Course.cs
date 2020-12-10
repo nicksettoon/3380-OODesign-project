@@ -3,42 +3,28 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using static xCourse.Data.xCourseContext;
 
 namespace xCourse.Entities
 {
     public class Course
     {
-        [Key]
-        public int ID { get; set; }
+        public int CourseId { get; set; }
         
         public string CourseCodeAbbriviation { get; set; }
-
        
         public string Number { get; set; }
 
-        [Required]
         public int Hours { get; set; }
 
         public string Description { get; set; }
 
-        public List<Course> Prerequisites { get; set; }
+        public virtual List<SemesterCourse> SemesterCourses { get; set; }
 
-        public Course()
-        {
+        public virtual List<UserCourse> UserCourses { get; set; }
 
-        }
+        public virtual List<Prerequisite> Prerequisites { get; set; }
 
-        public Course(string _abbriv, string _courseNumber, int _hours, string _description, List<Course> _prereqs)
-        {
-            CourseCodeAbbriviation = _abbriv;
-
-            Number = _courseNumber; 
-
-            Hours = _hours;
-
-            Description = _description;
-
-            Prerequisites = _prereqs;
-        }
+        public virtual List<Prerequisite> PrereqFor { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using xCourse.Entities;
@@ -14,56 +15,13 @@ namespace xCourse.Controllers
             {
                 return View(new PlanModel("Select a major", "", ""));
             }
-            using (var context = new FlowchartContext())
-            {
-                var DegreeList = context.Degree
-                    .Include(degree => degree.Semesters)
-                        .ThenInclude(semsester => semsester.Courses)
-                        .ThenInclude(course => course.Prerequisites)
-                    .ToList();
 
+            var DegreeList = FlowchartMethods.GetDegreeList();
 
-                string nodes = "";
+            var FlowchartStrings = FlowchartMethods.GenerateFlowchartStrings(DegreeList, CourseAbbrev);
 
-                string links = "";
+            return View("Index", new PlanModel("Computer Science - Software Engineering", FlowchartStrings[0], FlowchartStrings[1]));
 
-
-
-                foreach (var degree in DegreeList)
-                {
-                    if (degree.DegreeAbbriviation.Equals(CourseAbbrev))
-                    {
-                        int semesterCounter = 7;
-                        foreach (var semester in degree.Semesters)
-                        {
-                            foreach (var course in semester.Courses)
-                            {
-                                if (course.Prerequisites != null)
-                                {
-                                    foreach (var prereq in course.Prerequisites)
-                                    {
-                                        links += $"{{ to: \"{course.CourseCodeAbbriviation} {course.Number}\", from: \"{prereq.CourseCodeAbbriviation} {prereq.Number}\"}}, ";
-
-                                        
-                                    }
-                                    
-                                }
-
-                                nodes += $"{{ key: \"{course.CourseCodeAbbriviation} {course.Number}\", items: [ \"({course.Hours})\", \"{course.CourseCodeAbbriviation} {course.Number}\", \"{course.Description}\"], layer: {semesterCounter} }}, ";
-
-                                
-                            }
-
-                            semesterCounter--;
-                        }
-                    }
-                }
-
-                nodes = nodes.Remove(nodes.Length - 1, 1);
-                links = links.Remove(links.Length - 1, 1);
-
-                return View("Index", new PlanModel("Computer Science - Software Engineering", nodes, links));
-            }            
         }
     }
 }

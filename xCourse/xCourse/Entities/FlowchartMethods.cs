@@ -15,7 +15,7 @@ namespace xCourse.Entities
 
             string links = "";
 
-
+            var coursesTest = GetPreviouslyTakenCourses(1);
 
             foreach (var degree in DegreeList)
             {
@@ -38,9 +38,15 @@ namespace xCourse.Entities
                                 }
 
                             }
+                            if (coursesTest.Contains(course.CourseId))
+                            {
+                                nodes += $"{{ key: \"{course.CourseCodeAbbriviation} {course.Number}\", items: [ \"({course.Hours})\", \"{course.CourseCodeAbbriviation} {course.Number}\", \"{course.Description}\"], layer: {semesterCounter}, color: \"yellow\" }}, ";
 
-                            nodes += $"{{ key: \"{course.CourseCodeAbbriviation} {course.Number}\", items: [ \"({course.Hours})\", \"{course.CourseCodeAbbriviation} {course.Number}\", \"{course.Description}\"], layer: {semesterCounter} }}, ";
-
+                            }
+                            else
+                            {
+                                nodes += $"{{ key: \"{course.CourseCodeAbbriviation} {course.Number}\", items: [ \"({course.Hours})\", \"{course.CourseCodeAbbriviation} {course.Number}\", \"{course.Description}\"], layer: {semesterCounter}, color: \"white\" }}, ";
+                            }
 
                         }
 
@@ -76,5 +82,28 @@ namespace xCourse.Entities
                 return DegreeList;
             }
         }
+
+        public static IList<int> GetPreviouslyTakenCourses(int StudentId)
+        {
+            using (var context = new xCourseContext())
+            {
+                var users = context.Users.Select(u => u).Where(u => u.UserId == StudentId)
+                    .Include(u => u.UserCourses)
+                    .ThenInclude(uc => uc.Course)
+                    .ThenInclude(c => c.Prerequisites)
+                    .Include(u => u.UserCourses)
+                    .ThenInclude(uc => uc.Course)
+                    .ThenInclude(c => c.PrereqFor)
+                    .Include(u => u.UserCourses)
+                    .ThenInclude(uc => uc.Course)
+                    .ThenInclude(c => c.SemesterCourses)
+                    .ToList();
+
+                var courses = users.First().UserCourses.Select(uc => uc.Course.CourseId).ToList();
+
+                return courses;
+            }
+        }
+
     }
 }

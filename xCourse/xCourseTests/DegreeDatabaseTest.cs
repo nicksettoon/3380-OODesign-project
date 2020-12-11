@@ -28,5 +28,12 @@ namespace xCourseTests
             Assert.AreEqual(expected, flowchart[1], "The Generate flowchart method does not generate the links string correctely.");
         }
 
+        [TestMethod]
+        public void PreviouslyTakenCoursesTest()
+        {
+           var userCourses = FlowchartMethods.GetPreviouslyTakenCourses(1);
+
+        }
+
     }
 }

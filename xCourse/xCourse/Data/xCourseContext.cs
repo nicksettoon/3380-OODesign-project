@@ -779,13 +779,134 @@ namespace xCourse.Data
                 }
             };
 
-            /*var userCourses = new[]
+            var userCourses = new[]
             {
                 new UserCourse()
                 {
-
+                    UserId = 1,
+                    CourseId = 1
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 2
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 3
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 4
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 5
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 6
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 7
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 8
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 9
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 10
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 11
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 12
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 13
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 15
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 16
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 17
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 18
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 21
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 23
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 24
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 22
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 26
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 32
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 33
+                },
+                new UserCourse()
+                {
+                    UserId = 1,
+                    CourseId = 36
                 }
-            };*/
+            };
 
             modelBuilder.Entity<Degree>().HasData(degrees);
             modelBuilder.Entity<Semester>().HasData(semesters);
@@ -794,7 +915,7 @@ namespace xCourse.Data
             modelBuilder.Entity<DegreeSemester>().HasData(degreeSemesters);
             modelBuilder.Entity<SemesterCourse>().HasData(semesterCourses);
             modelBuilder.Entity<Prerequisite>().HasData(prereqs);
-            //modelBuilder.Entity<UserCourse>().HasData(userCourses);
+            modelBuilder.Entity<UserCourse>().HasData(userCourses);
             base.OnModelCreating(modelBuilder);
         }
 

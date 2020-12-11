@@ -96,7 +96,7 @@ function init() {
     myDiagram.nodeTemplate =
         $(go.Node, "Auto",
             $(go.Shape, "RoundedRectangle",
-                { fill: "white" }),
+                new go.Binding("fill", "color")),
             $(go.Panel, "Vertical",
                 new go.Binding("itemArray", "items"),
                 {
@@ -106,8 +106,7 @@ function init() {
                             $(go.TextBlock, new go.Binding("text", ""),
                                 { margin: 1 })
                         )
-                }
-            )
+                })
         );
 
     myDiagram.nodeTemplateMap.add("Bands",

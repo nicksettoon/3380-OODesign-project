@@ -203,7 +203,7 @@ function init() {
     myDiagram2.nodeTemplate =
         $(go.Node, "Auto",
             $(go.Shape, "RoundedRectangle",
-                { fill: "white" }),
+                new go.Binding("fill", "color")),
             $(go.Panel, "Vertical",
                 new go.Binding("itemArray", "items"),
                 {

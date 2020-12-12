@@ -40,7 +40,7 @@ namespace xCourse.Entities
                             }
                             if (coursesTest.Contains(course.CourseId))
                             {
-                                nodes += $"{{ key: \"{course.CourseCodeAbbriviation} {course.Number}\", items: [ \"({course.Hours})\", \"{course.CourseCodeAbbriviation} {course.Number}\", \"{course.Description}\"], layer: {semesterCounter}, color: \"yellow\" }}, ";
+                                nodes += $"{{ key: \"{course.CourseCodeAbbriviation} {course.Number}\", items: [ \"({course.Hours})\", \"{course.CourseCodeAbbriviation} {course.Number}\", \"{course.Description}\"], layer: {semesterCounter}, color: \"#00cc66\" }}, ";
 
                             }
                             else

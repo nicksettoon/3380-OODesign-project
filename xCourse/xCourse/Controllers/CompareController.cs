@@ -22,8 +22,8 @@ namespace xCourse.Controllers
                 case "Computer Science Second Discipline":
                     cmpDegreeAbr = "CSC SD";
                     break;
-                case "Electrical Engineering":
-                    cmpDegreeAbr = "EE";
+                case "Industrial Engineering":
+                    cmpDegreeAbr = "IE";
                     break;
                 default:
                     Console.WriteLine("Invalid Compare Degree");

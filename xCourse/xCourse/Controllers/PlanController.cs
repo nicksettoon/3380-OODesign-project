@@ -20,7 +20,25 @@ namespace xCourse.Controllers
 
             var FlowchartStrings = FlowchartMethods.GenerateFlowchartStrings(DegreeList, CourseAbbrev);
 
-            return View("Index", new PlanModel("Computer Science - Software Engineering", FlowchartStrings[0], FlowchartStrings[1]));
+            string Degree;
+
+            switch (CourseAbbrev)
+            {
+                case "EEC":
+                    Degree = "Computer Engineering";
+                    break;
+                case "CSC SD":
+                    Degree = "Computer Science Second Discipline";
+                    break;
+                case "IE":
+                    Degree = "Industrial Engineering";
+                    break;
+                default:
+                    Degree = "Invalid Compare Degree";
+                    break;
+            }
+
+            return View("Index", new PlanModel(Degree, FlowchartStrings[0], FlowchartStrings[1]));
 
         }
     }

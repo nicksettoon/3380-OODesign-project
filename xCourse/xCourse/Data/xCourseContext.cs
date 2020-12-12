@@ -110,6 +110,12 @@ namespace xCourse.Data
                     DegreeId = 2,
                     DegreeAbbriviation = "EEC",
                     Major = "Computer Engineering"
+                },
+                new Degree
+                {
+                    DegreeId = 3,
+                    DegreeAbbriviation = "IE",
+                    Major = "Industrial Engineering"
                 }
             };
 
@@ -178,6 +184,38 @@ namespace xCourse.Data
                 new Semester()
                 {
                     SemesterId = 16
+                },
+                new Semester()
+                {
+                    SemesterId = 17
+                },
+                new Semester()
+                {
+                    SemesterId = 18
+                },
+                new Semester()
+                {
+                    SemesterId = 19
+                },
+                new Semester()
+                {
+                    SemesterId = 20
+                },
+                new Semester()
+                {
+                    SemesterId = 21
+                },
+                new Semester()
+                {
+                    SemesterId = 22
+                },
+                new Semester()
+                {
+                    SemesterId = 23
+                },
+                new Semester()
+                {
+                    SemesterId = 24
                 }
             };
 
@@ -509,10 +547,10 @@ namespace xCourse.Data
                 },
                 new Course() {
                     CourseId = 45,
-                    CourseCodeAbbriviation = "Life-Science",
+                    CourseCodeAbbriviation = "Gen Ed",
                     Number = null,
                     Hours = 3,
-                    Description = "Gen Ed"
+                    Description = "Life-Science"
                 },
                 new Course() {
                     CourseId = 46,
@@ -663,7 +701,7 @@ namespace xCourse.Data
                     Number = null,
                     Hours = 3,
                     Description = ""
-                    },
+                },
                 new Course() {
                     CourseId = 67,
                     CourseCodeAbbriviation = "EE",
@@ -680,18 +718,173 @@ namespace xCourse.Data
                 },
                 new Course() {
                     CourseId = 69,
+                    CourseCodeAbbriviation = "CMST",
+                    Number = null,
+                    Hours = 3,
+                    Description = "1061 or 2060"
+                },
+                new Course() {
+                    CourseId = 70,
+                    CourseCodeAbbriviation = "IE",
+                    Number = "1002",
+                    Hours = 3,
+                    Description = "IE Fundamentals"
+                },
+                new Course() {
+                    CourseId = 71,
+                    CourseCodeAbbriviation = "IE",
+                    Number = "2400",
+                    Hours = 3,
+                    Description = "Methods & System Engr"
+                },
+                new Course() {
+                    CourseId = 72,
+                    CourseCodeAbbriviation = "ECON",
+                    Number = "2030",
+                    Hours = 3,
+                    Description = "Econ Prin"
+                },
+                new Course() {
+                    CourseId = 73,
+                    CourseCodeAbbriviation = "EE",
+                    Number = "2950",
+                    Hours = 3,
+                    Description = "Comp EE"
+                },
+                new Course() {
+                    CourseId = 74,
+                    CourseCodeAbbriviation = "PHYS",
+                    Number = "2112",
+                    Hours = 3,
+                    Description = "Gen Phys"
+                },
+                new Course() {
+                    CourseId = 75,
+                    CourseCodeAbbriviation = "ME",
+                    Number = "2733",
+                    Hours = 3,
+                    Description = "Engr Mat"
+                },
+                new Course() {
+                    CourseId = 76,
+                    CourseCodeAbbriviation = "CE",
+                    Number = "2450",
+                    Hours = 3,
+                    Description = "Statics"
+                },
+                new Course() {
+                    CourseId = 77,
+                    CourseCodeAbbriviation = "IE",
+                    Number = "2060",
+                    Hours = 3,
+                    Description = "Intro Comp"
+                },
+                new Course() {
+                    CourseId = 78,
+                    CourseCodeAbbriviation = "IE",
+                    Number = "3201",
+                    Hours = 3,
+                    Description = "Engr Econ"
+                },
+                new Course() {
+                    CourseId = 79,
+                    CourseCodeAbbriviation = "CE",
+                    Number = "3400",
+                    Hours = 3,
+                    Description = "Strength"
+                },
+                new Course() {
+                    CourseId = 80,
+                    CourseCodeAbbriviation = "IE",
+                    Number = "4362",
+                    Hours = 3,
+                    Description = "Adv Stat"
+                },
+                new Course() {
+                    CourseId = 81, 
+                    CourseCodeAbbriviation = "IE",
+                    Number = "3520",
+                    Hours = 3,
+                    Description = "Supply Chain Logistics I"
+                },
+                 new Course() {
+                    CourseId = 82,
+                    CourseCodeAbbriviation = "IE",
+                    Number = "4461",
+                    Hours = 3,
+                    Description = "Hum. Fac."
+                 },
+                 new Course() {
+                    CourseId = 83,
+                    CourseCodeAbbriviation = "ME",
+                    Number = "3633",
+                    Hours = 3,
+                    Description = "Mfg Proc"
+                 },
+                 new Course() {
+                    CourseId = 84,
+                    CourseCodeAbbriviation = "IE",
+                    Number = "4113",
+                    Hours = 3,
+                    Description = "Proj Mgmt",
+                },
+                 new Course() {
+                    CourseId = 85,
+                    CourseCodeAbbriviation = "IE",
+                    Number = "4453",
+                    Hours = 3,
+                    Description = "QC & Six Sigma"
+                 },
+                  new Course() {
+                    CourseId = 86,
+                    CourseCodeAbbriviation = "IE",
+                    Number = "4520",
+                    Hours = 3,
+                    Description = "Supply Chain Logisitcs II"
+                  },
+                 new Course() {
+                    CourseId = 87,
+                    CourseCodeAbbriviation = "IE",
+                    Number = "4425",
+                    Hours = 3,
+                    Description = "Info Sys"
+                 },
+                 new Course() {
+                    CourseId = 88,
                     CourseCodeAbbriviation = "Tech Elect",
                     Number = null,
                     Hours = 3,
                     Description = ""
                 },
-                new Course() {
-                    CourseId = 70,
-                    CourseCodeAbbriviation = "EE Design",
-                    Number = null,
+                 new Course() {
+                    CourseId = 89,
+                    CourseCodeAbbriviation = "IE",
+                    Number = "4530",
                     Hours = 3,
-                    Description = ""
-                }
+                    Description = "Learn Mfg"
+                 },
+                 new Course() {
+                    CourseId = 90,
+                    CourseCodeAbbriviation = "IE",
+                    Number = "4597",
+                    Hours = 2,
+                    Description = "Senior Design I"
+                 },
+                 new Course() {
+                    CourseId = 91,
+                    CourseCodeAbbriviation = "IE",
+                    Number = "4530",
+                    Hours = 3,
+                    Description = "Learn Mfg"
+                 },
+                 new Course() {
+                    CourseId = 92,
+                    CourseCodeAbbriviation = "IE",
+                    Number = "4598",
+                    Hours = 2,
+                    Description = "Senior Design II"
+                 }
+
             };
 
             var users = new[]
@@ -799,6 +992,54 @@ namespace xCourse.Data
                 {
                     DegreeId = 2,
                     SemesterId = 16,
+                    layer = 8
+                }, 
+                new DegreeSemester()
+                {
+                    DegreeId = 3,
+                    SemesterId = 17,
+                    layer = 1
+                },
+                new DegreeSemester()
+                {
+                    DegreeId = 3,
+                    SemesterId = 18,
+                    layer = 2
+                },
+                new DegreeSemester()
+                {
+                    DegreeId = 3,
+                    SemesterId = 19,
+                    layer = 3
+                },
+                new DegreeSemester()
+                {
+                    DegreeId = 3,
+                    SemesterId = 20,
+                    layer = 4
+                },
+                new DegreeSemester()
+                {
+                    DegreeId = 3,
+                    SemesterId = 21,
+                    layer = 5
+                },
+                new DegreeSemester()
+                {
+                    DegreeId = 3,
+                    SemesterId = 22,
+                    layer = 6
+                },
+                new DegreeSemester()
+                {
+                    DegreeId = 3,
+                    SemesterId = 23,
+                    layer = 7
+                },
+                new DegreeSemester()
+                {
+                    DegreeId = 3,
+                    SemesterId = 24,
                     layer = 8
                 }
             };
@@ -933,7 +1174,7 @@ namespace xCourse.Data
                 new SemesterCourse()
                 {
                     SemesterId = 6,
-                    CourseId = 26
+                    CourseId = 22
                 },
                 new SemesterCourse()
                 {
@@ -963,12 +1204,12 @@ namespace xCourse.Data
                 new SemesterCourse()
                 {
                     SemesterId = 7,
-                    CourseId = 32
+                    CourseId = 22
                 },
                 new SemesterCourse()
                 {
                     SemesterId = 7,
-                    CourseId = 33
+                    CourseId = 26
                 },
                 new SemesterCourse()
                 {
@@ -978,12 +1219,12 @@ namespace xCourse.Data
                 new SemesterCourse()
                 {
                     SemesterId = 8,
-                    CourseId = 35
+                    CourseId = 30
                 },
                 new SemesterCourse()
                 {
                     SemesterId = 8,
-                    CourseId = 36
+                    CourseId = 22
                 },
                 new SemesterCourse()
                 {
@@ -1208,6 +1449,206 @@ namespace xCourse.Data
                 {
                     SemesterId = 16,
                     CourseId = 13
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 17,
+                    CourseId = 3
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 17,
+                    CourseId = 69
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 17,
+                    CourseId = 39
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 17,
+                    CourseId = 2
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 17,
+                    CourseId = 70
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 18,
+                    CourseId = 13
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 18,
+                    CourseId = 43
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 18,
+                    CourseId = 44
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 18,
+                    CourseId = 6
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 18,
+                    CourseId = 71
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 19,
+                    CourseId = 45
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 19,
+                    CourseId = 72
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 19,
+                    CourseId = 73
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 19,
+                    CourseId = 74
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 19,
+                    CourseId = 12
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 20,
+                    CourseId = 17
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 20,
+                    CourseId = 75
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 20,
+                    CourseId = 76
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 20,
+                    CourseId = 21
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 20,
+                    CourseId = 77
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 21,
+                    CourseId = 78
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 21,
+                    CourseId = 79
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 21,
+                    CourseId = 80
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 21,
+                    CourseId = 81
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 21,
+                    CourseId = 82
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 22,
+                    CourseId = 82
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 22,
+                    CourseId = 83
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 22,
+                    CourseId = 84
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 22,
+                    CourseId = 85
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 22,
+                    CourseId = 86
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 22,
+                    CourseId = 87
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 23,
+                    CourseId = 65
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 23,
+                    CourseId = 89
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 23,
+                    CourseId = 90
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 23,
+                    CourseId = 91
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 24,
+                    CourseId = 37
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 24,
+                    CourseId = 13
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 24,
+                    CourseId = 65
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 24,
+                    CourseId = 88
+                },
+                new SemesterCourse()
+                {
+                    SemesterId = 24,
+                    CourseId = 92
                 }
             };
 
@@ -1483,6 +1924,174 @@ namespace xCourse.Data
                     PrerequisiteId = 44,
                     SubCourseId = 68,
                     PrerequisiteCourseId = 64
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 45,
+                    SubCourseId = 71,
+                    PrerequisiteCourseId = 70
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 46,
+                    SubCourseId = 73,
+                    PrerequisiteCourseId = 6
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 47,
+                    SubCourseId = 74,
+                    PrerequisiteCourseId = 6
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 1001,
+                    SubCourseId = 74,
+                    PrerequisiteCourseId = 43
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 48,
+                    SubCourseId = 17,
+                    PrerequisiteCourseId = 3
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 49,
+                    SubCourseId = 75,
+                    PrerequisiteCourseId = 74
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 50,
+                    SubCourseId = 76,
+                    PrerequisiteCourseId = 43
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 51,
+                    SubCourseId = 76,
+                    PrerequisiteCourseId = 6
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 52,
+                    SubCourseId = 21,
+                    PrerequisiteCourseId = 74
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 53,
+                    SubCourseId = 77,
+                    PrerequisiteCourseId = 70
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 54,
+                    SubCourseId = 79,
+                    PrerequisiteCourseId = 76
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 55,
+                    SubCourseId = 80,
+                    PrerequisiteCourseId = 21
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 56,
+                    SubCourseId = 81,
+                    PrerequisiteCourseId = 6
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 57,
+                    SubCourseId = 81,
+                    PrerequisiteCourseId = 21
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 58,
+                    SubCourseId = 82,
+                    PrerequisiteCourseId = 71
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 59,
+                    SubCourseId = 83,
+                    PrerequisiteCourseId = 75
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 60,
+                    SubCourseId = 85,
+                    PrerequisiteCourseId = 21
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 61,
+                    SubCourseId = 86,
+                    PrerequisiteCourseId = 81
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 62,
+                    SubCourseId = 87,
+                    PrerequisiteCourseId = 77
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 63,
+                    SubCourseId = 89,
+                    PrerequisiteCourseId = 78
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 64,
+                    SubCourseId = 89,
+                    PrerequisiteCourseId = 81
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 65,
+                    SubCourseId = 89,
+                    PrerequisiteCourseId = 84
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 66,
+                    SubCourseId = 90,
+                    PrerequisiteCourseId = 82
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 67,
+                    SubCourseId = 90,
+                    PrerequisiteCourseId = 83
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 68,
+                    SubCourseId = 90,
+                    PrerequisiteCourseId = 85
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 69,
+                    SubCourseId = 91,
+                    PrerequisiteCourseId = 77
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 70,
+                    SubCourseId = 91,
+                    PrerequisiteCourseId = 81
+                },
+                new Prerequisite()
+                {
+                    PrerequisiteId = 71,
+                    SubCourseId = 92,
+                    PrerequisiteCourseId = 90
                 }
             };
 
